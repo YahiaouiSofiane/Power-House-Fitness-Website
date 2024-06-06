@@ -14,7 +14,7 @@ footer .container h2 {
     font-size: var(--size-xxs);
 }
 footer .container h2 span {
-    color: var(--main-red-color);
+    color: var(--main-red-color-brighter);
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
