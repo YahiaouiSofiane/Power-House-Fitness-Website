@@ -20,7 +20,7 @@
 }
 .about__paragraph span {
     font-family: "Montserrat", sans-serif;
-    color: var(--main-red-color);
+    color: var(--main-red-color-brighter);
     font-weight: 700;
     font-size: var(--size-base);
 }
