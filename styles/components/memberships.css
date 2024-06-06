@@ -1,0 +1,114 @@
+.membership__section {
+    width: 100%;
+    position: relative;
+}
+.memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.membership {
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-top: 2px solid var(--main-red-color);
+    background-color: var(--main-card-color);
+    min-height: 400px;
+}
+.membership__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: saturate(0);
+    opacity: 0.4;
+}
+.membership__type {
+    font-size: var(--size-base);
+    color: var(--main-white-color);
+    font-weight: 500;
+}
+.membership__content {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+.membership__price {
+    font-size: var(--size-3xl);
+    color: var(--main-white-color);
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.membership__benefits {
+    list-style: inside;
+    color: var(--main-white-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--size-xs);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.membership__benefits:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+/* xs */
+@media (min-width: 475px) {
+    .membership__benefits {
+        font-size: var(--size-sm);
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .membership__type {
+        font-size: var(--size-xl);
+    }
+    .membership__price {
+        font-size: var(--size-4xl);
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    .membership {
+        width: 480px;
+    }
+    .memberships {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .basic .membership__content {
+        margin-bottom: 16rem;
+    }
+}
+/* xl */
+@media (min-width: 1280px) {
+    .basic {
+        max-height: 520px;
+    }
+    .basic .membership__content {
+        margin-bottom: 10rem;
+    }
+    .standard {
+        max-height: 675px;
+    }
+    .premium {
+        max-height: 815px;
+    }
+    .membership {
+        max-width: 400px;
+    }
+}
+/* 2xl */
+@media (min-width: 1440px) {
+    .membership {
+        max-width: 450px;
+    }
+    .standard {
+        max-height: 630px;
+    }
+}

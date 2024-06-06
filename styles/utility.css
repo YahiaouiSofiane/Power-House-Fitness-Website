@@ -1,0 +1,113 @@
+.main__button {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--main-red-color);
+    color: var(--main-white-color);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    font-size: var(--size-xs);
+}
+.main__button:hover {
+    background-color: var(--main-red-hover);
+}
+.open__menu {
+    display: flex;
+    width: 100%;
+}
+.display__block {
+    display: block;
+}
+.display__none {
+    display: none;
+}
+.filter__opacity {
+    filter: opacity(0.5);
+}
+.title {
+    font-size: var(--size-2xl);
+    color: var(--main-white-color);
+    font-weight: 500;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+.title::before {
+    content: "";
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background: linear-gradient(90deg, rgba(9,9,9,0) 0%, rgba(220,38,38,1) 100%);
+    border-radius: 10px;
+}
+.active {
+    color: #ff4646;
+    font-weight: 700;
+}
+/* ########## Container ########## */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* ########## Container ########## */
+.section {
+    margin-top: 9rem;
+}
+    /* xs */
+@media (min-width: 475px) {
+    .title {
+        font-size: var(--size-3xl);
+    }
+    .container {
+        max-width: 475px;
+    }
+}
+    /* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+    /* md */
+@media (min-width: 768px) {
+    .title {
+        font-size: var(--size-4xl);
+    }
+    .container {
+        max-width: 768px;
+    }
+}
+  /* lg */
+    @media (min-width: 1024px) {
+    .title {
+        font-size: var(--size-5xl);
+    }
+    .container {
+        max-width: 1024px;
+    }
+    .section {
+        margin-top: 12rem;
+    }
+}
+    /* xl */
+@media (min-width: 1280px) {
+    .title {
+        font-size: var(--size-5xl);
+    }
+    .main__button {
+        font-size: var(--size-sm);
+    }
+    .container {
+        max-width: 1280px;
+    }
+}
+    /* 2xl */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+

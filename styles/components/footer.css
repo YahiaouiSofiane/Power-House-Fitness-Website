@@ -1,0 +1,32 @@
+footer {
+    width: 100%;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1.5rem;
+}
+footer .container h2 {
+    color: var(--main-white-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: var(--size-xxs);
+}
+footer .container h2 span {
+    color: var(--main-red-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+/* xs */
+@media (min-width: 475px) {
+    footer .container h2 {
+        font-size: var(--size-xs);
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    footer .container h2 {
+        font-size: var(--size-sm);
+    }
+}
