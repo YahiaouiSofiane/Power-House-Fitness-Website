@@ -41,7 +41,7 @@
     font-weight: 500;
 }
 .the__offer__one span, .the__offer__two span {
-    color: var(--main-red-color);
+    color: var(--main-red-color-brighter);
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: var(--size-sm);
